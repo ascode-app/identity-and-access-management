@@ -1,49 +1,61 @@
-import NxWelcome from './nx-welcome';
-
+import { Security } from '@okta/okta-react';
+import { oktaAuth } from '../okta-config';
+import { LoginCallback, SecureRoute } from '@okta/okta-react';
 import { Route, Routes, Link } from 'react-router-dom';
+import HomePage from './home-page';
+import ProfilePage from './profile-page';
+import LoginPage from './login-page';
+
+const restoreOriginalUri = (_oktaAuth: any, originalUri: string) => {
+  window.location.replace(originalUri);
+};
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="my-app" />
+    <Security oktaAuth={oktaAuth} restoreOriginalUri={restoreOriginalUri}>
+      <div className="min-h-screen bg-gray-50">
+        {/* Navigation */}
+        <nav className="bg-white shadow-sm border-b">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between h-16">
+              <div className="flex items-center">
+                <Link to="/" className="text-xl font-bold text-gray-900">
+                  Okta Demo App
+                </Link>
+              </div>
+              <div className="flex items-center space-x-4">
+                <Link 
+                  to="/" 
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Home
+                </Link>
+                <Link 
+                  to="/profile" 
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Profile
+                </Link>
+              </div>
+            </div>
+          </div>
+        </nav>
 
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
-      <div role="navigation">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/page-2">Page 2</Link>
-          </li>
-        </ul>
+        {/* Main Content */}
+        <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <Routes>
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/login/callback" element={<LoginCallback />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/profile" element={
+              <SecureRoute>
+                <ProfilePage />
+              </SecureRoute>
+            } />
+          </Routes>
+        </main>
       </div>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              This is the generated root route.{' '}
-              <Link to="/page-2">Click here for page 2.</Link>
-            </div>
-          }
-        />
-        <Route
-          path="/page-2"
-          element={
-            <div>
-              <Link to="/">Click here to go back to root page.</Link>
-            </div>
-          }
-        />
-      </Routes>
-      {/* END: routes */}
-    </div>
+    </Security>
   );
 }
 
