@@ -165,3 +165,5 @@ cython_debug/
 *.tfstate.*
 terraform.tfvars
 # .terraform.lock.hcl # Do NOT ignore this file!
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md

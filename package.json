@@ -1,5 +1,5 @@
 {
-  "name": "replace-with-your-repository-name",
+  "name": "identity-and-access-management",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,16 +9,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Replace with your GitHub username",
+  "author": "Willem van Heemstra",
   "license": "ISC",
   "devDependencies": {
     "@nrwl/workspace": "^19.8.4",
-    "@nx/eslint": "^20.4.5",
-    "@nx/jest": "^20.4.5",
-    "@nx/playwright": "^20.4.5",
-    "@nx/react": "^20.4.5",
-    "@nx/webpack": "^20.4.5",
-    "nx": "^20.4.5",
+    "@nx/eslint": "21.5.2",
+    "@nx/jest": "21.5.2",
+    "@nx/playwright": "21.5.2",
+    "@nx/react": "21.5.2",
+    "@nx/webpack": "21.5.2",
+    "nx": "21.5.2",
     "webpack-cli": "^6.0.1"
   }
 }
