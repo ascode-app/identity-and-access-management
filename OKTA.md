@@ -256,7 +256,15 @@ src/
 
    Assign to the Demo App.
 
-   - Click Done
+   <img width="1358" height="989" alt="Image" src="https://github.com/user-attachments/assets/acb779d5-c639-4ba9-95e7-6d6a08d949f1" />
+
+   Enter any additional information if so wanted.
+
+   - Click **Save and Go Back**
+
+   <img width="1358" height="989" alt="Image" src="https://github.com/user-attachments/assets/3d71a03b-a1d1-47fc-82fd-cae7eafb4920" />
+
+   You may get above error: *It is not possible to assign users to an AppInstance that has Federation Broker Mode enabled*
 
    === WE ARE HERE ===
 
