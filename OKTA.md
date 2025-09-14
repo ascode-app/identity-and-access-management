@@ -245,6 +245,12 @@ src/
 
    <img width="1118" height="955" alt="Image" src="https://github.com/user-attachments/assets/d0ffca66-067e-46c8-aee3-85d89c608dc7" />
 
+   When choosing to verify with the Okta Code retrieved from an Okta Verify mobile app:
+
+   <img width="1122" height="954" alt="Image" src="https://github.com/user-attachments/assets/6dc86be8-c117-4788-ba08-74e4e67fed66" />
+
+
+
    === WE ARE HERE ===    
 
 ### Development Tips:
