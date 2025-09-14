@@ -487,7 +487,165 @@ When trying to modify security policies, Okta may require step-up authentication
 
 ## Demonstration scenarios
 
-[PUT DEMONSTRATION SCENARIOS HERE]
+### **Scenario 1: Basic Authentication Flow**
+**Objective:** Demonstrate the complete OAuth2/OIDC authentication flow
+
+**Steps:**
+1. **Start the Demo App:** Navigate to `http://localhost:4200`
+2. **Show the Home Page:** Display the public homepage with login button
+3. **Click "Login with Okta":** Initiate the authentication flow
+4. **Observe Redirect:** Show how the app redirects to Okta's hosted login page
+5. **Enter Credentials:** Demonstrate password-only authentication (1-factor)
+6. **Show Callback:** Observe the automatic redirect back to the app
+7. **Display Profile:** Show the protected profile page with user information
+
+**Key Points to Highlight:**
+- Seamless redirect flow
+- Secure token handling
+- Automatic session management
+- User claims and profile data
+
+### **Scenario 2: Protected Route Access**
+**Objective:** Demonstrate route protection and access control
+
+**Steps:**
+1. **Access Protected Route:** Try to navigate to `/profile` without being logged in
+2. **Show Redirect:** Observe automatic redirect to login page
+3. **Complete Authentication:** Log in successfully
+4. **Access Profile:** Navigate to the profile page
+5. **Show User Data:** Display user information, claims, and session details
+
+**Key Points to Highlight:**
+- Automatic route protection
+- Seamless user experience
+- Session persistence
+- Secure access control
+
+### **Scenario 3: User Profile and Claims**
+**Objective:** Demonstrate user information retrieval and display
+
+**Steps:**
+1. **Login to the App:** Complete the authentication flow
+2. **Navigate to Profile:** Access the protected profile page
+3. **Review User Information:** Show displayed user data:
+   - Display name
+   - Email address
+   - Username
+   - User ID
+4. **Examine Claims:** Review the complete user claims object
+5. **Show Real-time Updates:** Demonstrate how profile updates when user logs in/out
+
+**Key Points to Highlight:**
+- Rich user profile data
+- Complete claims object
+- Real-time state updates
+- Debugging capabilities
+
+### **Scenario 4: Logout and Session Management**
+**Objective:** Demonstrate secure logout and session cleanup
+
+**Steps:**
+1. **Login to the App:** Complete authentication
+2. **Navigate Around:** Show that user is authenticated across the app
+3. **Click Logout:** Initiate the logout process
+4. **Observe Redirect:** Show redirect to Okta logout
+5. **Return to App:** Observe return to homepage
+6. **Try Protected Route:** Attempt to access `/profile` (should redirect to login)
+7. **Show Session Cleanup:** Demonstrate that session is completely cleared
+
+**Key Points to Highlight:**
+- Secure logout process
+- Complete session cleanup
+- Proper redirect handling
+- Security best practices
+
+### **Scenario 5: Error Handling and Edge Cases**
+**Objective:** Demonstrate error handling and edge case scenarios
+
+**Steps:**
+1. **Network Issues:** Simulate network problems during login
+2. **Invalid Credentials:** Show what happens with wrong password
+3. **Browser Refresh:** Refresh the page while authenticated
+4. **Session Expiry:** Demonstrate behavior when session expires
+5. **Multiple Tabs:** Show behavior across multiple browser tabs
+
+**Key Points to Highlight:**
+- Graceful error handling
+- User-friendly error messages
+- Session persistence across tabs
+- Automatic token refresh
+
+### **Scenario 6: Development and Debugging**
+**Objective:** Show development tools and debugging capabilities
+
+**Steps:**
+1. **Open Developer Tools:** Show browser console
+2. **Review Configuration:** Display Okta configuration in console
+3. **Monitor Network:** Show OAuth2/OIDC requests in Network tab
+4. **Examine Tokens:** Review access tokens and ID tokens
+5. **Check Claims:** Inspect user claims object
+6. **Review Logs:** Show system logs in Okta Admin Console
+
+**Key Points to Highlight:**
+- Development debugging tools
+- Network request monitoring
+- Token inspection
+- System log analysis
+
+### **Scenario 7: Policy Configuration Demo**
+**Objective:** Demonstrate authentication policy management
+
+**Steps:**
+1. **Show Current Policy:** Display 1-factor authentication policy
+2. **Explain Policy Types:** Discuss different authentication factors
+3. **Show Policy Assignment:** Demonstrate how policies are assigned to apps
+4. **Test Policy Changes:** Show how policy changes affect authentication
+5. **Review System Logs:** Examine authentication events in system logs
+
+**Key Points to Highlight:**
+- Policy configuration
+- Authentication factors
+- Policy assignment
+- System monitoring
+
+### **Scenario 8: Integration with Backend APIs**
+**Objective:** Demonstrate how to use Okta tokens for API calls
+
+**Steps:**
+1. **Show Token Usage:** Display how to extract access tokens
+2. **API Call Example:** Show how to make authenticated API calls
+3. **Token Refresh:** Demonstrate automatic token refresh
+4. **Error Handling:** Show how to handle token expiry
+5. **Security Best Practices:** Discuss secure token handling
+
+**Key Points to Highlight:**
+- Token extraction and usage
+- API authentication
+- Automatic token refresh
+- Security considerations
+
+### **Demo Script Template**
+
+**Opening (2 minutes):**
+- "Today we'll demonstrate Okta integration with a React application"
+- "We'll show authentication, authorization, and user management"
+- "This demo covers the complete OAuth2/OIDC flow"
+
+**Main Demo (10-15 minutes):**
+- Choose 2-3 scenarios based on audience needs
+- Focus on scenarios most relevant to your use case
+- Allow time for questions between scenarios
+
+**Closing (2-3 minutes):**
+- Summarize key benefits demonstrated
+- Discuss next steps for implementation
+- Provide resources for further learning
+
+**Audience-Specific Scenarios:**
+- **Developers:** Focus on Scenarios 1, 2, 5, and 6
+- **Security Teams:** Focus on Scenarios 3, 4, and 7
+- **Business Stakeholders:** Focus on Scenarios 1, 2, and 3
+- **Architects:** Focus on Scenarios 1, 4, and 8
 
 
 ## Next Steps
