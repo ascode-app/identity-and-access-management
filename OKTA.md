@@ -485,6 +485,11 @@ When trying to modify security policies, Okta may require step-up authentication
 - This makes testing easier without requiring 2FA setup
 - Production applications should use appropriate security policies
 
+## Demonstration scenarios
+
+[PUT DEMONSTRATION SCENARIOS HERE]
+
+
 ## Next Steps
 
 This demo provides a foundation for integrating Okta into your applications. You can extend it by:
