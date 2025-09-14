@@ -154,6 +154,9 @@ code .env.local
    npx nx serve my-app
    ```
 3. **Open your browser** to `http://localhost:4200`
+
+<img width="1666" height="441" alt="Image" src="https://github.com/user-attachments/assets/83ba916f-5256-49d8-9950-dfa1f25a9627" />
+
 4. **Click "Login with Okta"** to test the integration
 
 ## Running the Application
