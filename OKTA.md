@@ -371,6 +371,54 @@ If you encounter a "You are not allowed to access this app" error with `FAILURE:
 
 This resolves the `no_matching_policy` error that prevents OAuth2 authentication from working.
 
+## **React Router v6 Compatibility Fix**
+
+If you encounter the error "SecureRoute only works with react-router-dom v5", you need to create a custom SecureRoute component for React Router v6:
+
+### **Create Custom SecureRoute Component**
+
+Create a new file `src/app/secure-route.tsx`:
+
+```tsx
+import { useOktaAuth } from '@okta/okta-react';
+import { Navigate } from 'react-router-dom';
+import { ReactNode } from 'react';
+
+interface SecureRouteProps {
+  children: ReactNode;
+}
+
+export function SecureRoute({ children }: SecureRouteProps) {
+  const { oktaAuth, authState } = useOktaAuth();
+
+  if (!authState) {
+    return <div>Loading...</div>;
+  }
+
+  if (!authState.isAuthenticated) {
+    // Redirect to login page
+    return <Navigate to="/login" replace />;
+  }
+
+  return <>{children}</>;
+}
+```
+
+### **Update App.tsx Import**
+
+Replace the Okta SecureRoute import with your custom one:
+
+```tsx
+// Remove this import:
+// import { LoginCallback, SecureRoute } from '@okta/okta-react';
+
+// Add this import:
+import { LoginCallback } from '@okta/okta-react';
+import { SecureRoute } from './secure-route';
+```
+
+This custom SecureRoute component provides the same functionality as the Okta version but is compatible with React Router v6.
+
    === WE ARE HERE ===
 
 7. **Try Google Chrome Browser:**

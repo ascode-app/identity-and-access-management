@@ -1,10 +1,11 @@
 import { Security } from '@okta/okta-react';
 import { oktaAuth } from '../okta-config';
-import { LoginCallback, SecureRoute } from '@okta/okta-react';
+import { LoginCallback } from '@okta/okta-react';
 import { Route, Routes, Link } from 'react-router-dom';
 import HomePage from './home-page';
 import ProfilePage from './profile-page';
 import LoginPage from './login-page';
+import { SecureRoute } from './secure-route';
 
 export function App() {
   return (
