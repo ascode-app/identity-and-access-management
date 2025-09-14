@@ -373,7 +373,11 @@ Name it: "Demo App Policy" or similar
 Description: "Policy for Demo App access"
 Assign to: Select your "Okta Demo App"
 Click "Create Policy"
+
 Step 3: Create Access Policy Rule
+
+<img width="1171" height="976" alt="Image" src="https://github.com/user-attachments/assets/110dacc6-7710-4cb5-a841-601151561b5d" />
+
 After creating the policy:
 Click on the policy you just created
 Go to "Access Rules" tab
