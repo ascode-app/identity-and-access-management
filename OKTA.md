@@ -382,6 +382,9 @@ After creating the policy:
 Click on the policy you just created
 Go to "Access Rules" tab
 Click "Add Rule"
+
+<img width="1171" height="976" alt="Image" src="https://github.com/user-attachments/assets/70bdd216-70cc-4410-b847-d4e47f158326" />
+
 Configure the rule:
 Rule name: "Default Rule"
 Grant type: Check "Authorization Code" and "Refresh Token"
