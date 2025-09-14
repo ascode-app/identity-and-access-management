@@ -249,7 +249,9 @@ src/
 
    <img width="1122" height="954" alt="Image" src="https://github.com/user-attachments/assets/6dc86be8-c117-4788-ba08-74e4e67fed66" />
 
+   Followed by a Password verification:
 
+   <img width="1122" height="954" alt="Image" src="https://github.com/user-attachments/assets/d1c98b84-e5c5-46c6-ba57-55f5f6f8a1b8" />
 
    === WE ARE HERE ===    
 
