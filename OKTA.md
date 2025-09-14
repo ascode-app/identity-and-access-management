@@ -75,7 +75,7 @@ This React application demonstrates integration with Okta for authentication and
    <img width="1666" height="592" alt="Image" src="https://github.com/user-attachments/assets/397a2b54-2d27-47ae-a01e-8ab8b0c6ca0e" />
 
    - Copy the **Client ID** (here: 0oaveu18q5ebi43io697)
-   - Your **Domain** is shown at the top of the Okta Developer Console (here: )
+   - Your **Domain** is shown at the top of the Okta Developer Console (here: integrator-1150200-admin.okta.com)
 
 ## Environment Configuration
 
