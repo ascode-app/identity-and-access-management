@@ -240,7 +240,19 @@ src/
 
    <img width="1362" height="990" alt="Image" src="https://github.com/user-attachments/assets/f1eba4f9-f88a-4525-9013-c20c09f2371c" />
 
-6. **Try Google Chrome Browser:**
+6. **Assign Yourself to the Demo App:**
+
+   - Go to: Directory -> People
+   - Find your user account (here: Willem van Heemstra)
+   - Make sure the account is "Active"
+   - Check if there are any restrictions
+   - Make sure you are assigned to the Demo App (if not, add the Demo App)
+
+   <img width="1358" height="989" alt="Image" src="https://github.com/user-attachments/assets/87ec4762-59dc-4f14-a12c-b21b686ae175" />
+
+   === WE ARE HERE ===
+
+7. **Try Google Chrome Browser:**
    - Instead of Brave, try Google Chrome Browser:
 
    <img width="1118" height="955" alt="Image" src="https://github.com/user-attachments/assets/d0ffca66-067e-46c8-aee3-85d89c608dc7" />
@@ -253,7 +265,7 @@ src/
 
    <img width="1122" height="954" alt="Image" src="https://github.com/user-attachments/assets/d1c98b84-e5c5-46c6-ba57-55f5f6f8a1b8" />
 
-   === WE ARE HERE ===    
+   === MORE IMAGES HERE ===    
 
 ### Development Tips:
 
