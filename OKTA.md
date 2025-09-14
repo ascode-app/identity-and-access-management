@@ -23,6 +23,12 @@ This React application demonstrates integration with Okta for authentication and
 
    <img width="936" height="740" alt="Image" src="https://github.com/user-attachments/assets/780ecf47-c283-4c98-abcd-61b65c26df6e" />
 
+   Using the code:
+
+   <img width="938" height="822" alt="Image" src="https://github.com/user-attachments/assets/07f5c22f-b57d-4d52-bb4b-e6cf46838268" />
+
+   Using the password:
+
    <img width="938" height="822" alt="Image" src="https://github.com/user-attachments/assets/2db457f5-8b60-4629-865c-770ee9e32b62" />
 
    - Navigate to Applications → Applications
