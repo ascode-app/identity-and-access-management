@@ -61,6 +61,8 @@ This React application demonstrates integration with Okta for authentication and
 
    <img width="1666" height="241" alt="Image" src="https://github.com/user-attachments/assets/fb3779e6-4db4-4d68-9044-b19211ebb7da" />
 
+   - Click "Save"
+
 3. **Get Your Configuration Values:**
    - After creating the app, go to the "General" tab
    - Copy the **Client ID**
