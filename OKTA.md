@@ -306,6 +306,14 @@ Now we have assigned ourself to the demo App:
 
 <img width="1358" height="989" alt="Image" src="https://github.com/user-attachments/assets/b3840067-e8f1-4ac5-aeda-f97b50e47d04" />
 
+For demonstration purpose we change the Catch All rule of the Demo App to have only **Any 1 factor type** instead of the original **Any 2 factor type**:
+
+<img width="1358" height="989" alt="Image" src="https://github.com/user-attachments/assets/8de83d8d-2cb2-4323-b284-ca3fbaab3786" />
+
+When warned about the less secure option, choose **Save anyway** as we use it for demonstration purpose only.
+
+Now try again to login from the Demo App page at http://localhost:4200
+
    === WE ARE HERE ===
 
 7. **Try Google Chrome Browser:**
