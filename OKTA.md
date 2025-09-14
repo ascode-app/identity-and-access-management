@@ -55,6 +55,12 @@ This React application demonstrates integration with Okta for authentication and
    - **Sign-out redirect URIs:** `http://localhost:4200`
    - **Trusted Origins:** Add `http://localhost:4200` with CORS and Redirect enabled
 
+   <img width="1666" height="988" alt="Image" src="https://github.com/user-attachments/assets/4d2ea6f7-6b9b-41ba-8333-2ffec3522856" />
+
+   <img width="1666" height="988" alt="Image" src="https://github.com/user-attachments/assets/247c3eb2-1b74-4dd2-8a46-6b6060df7685" />
+
+   <img width="1666" height="241" alt="Image" src="https://github.com/user-attachments/assets/fb3779e6-4db4-4d68-9044-b19211ebb7da" />
+
 3. **Get Your Configuration Values:**
    - After creating the app, go to the "General" tab
    - Copy the **Client ID**
