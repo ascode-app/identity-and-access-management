@@ -240,6 +240,13 @@ src/
 
    <img width="1362" height="990" alt="Image" src="https://github.com/user-attachments/assets/f1eba4f9-f88a-4525-9013-c20c09f2371c" />
 
+6. **Try Google Chrome Browser:**
+   - Instead of Brave, try Google Chrome Browser:
+
+   <img width="1118" height="955" alt="Image" src="https://github.com/user-attachments/assets/d0ffca66-067e-46c8-aee3-85d89c608dc7" />
+
+   === WE ARE HERE ===    
+
 ### Development Tips:
 
 - Use browser developer tools to inspect network requests
