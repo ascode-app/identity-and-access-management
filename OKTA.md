@@ -312,6 +312,10 @@ For demonstration purpose we change the Catch All rule of the Demo App to have o
 
 When warned about the less secure option, choose **Save anyway** as we use it for demonstration purpose only.
 
+After this it will alert you: **This is a protected action. Please perform step-up authentication.**
+
+... TO DO: Perform Step-Up Authentication.
+
 Now try again to login from the Demo App page at http://localhost:4200
 
    === WE ARE HERE ===
