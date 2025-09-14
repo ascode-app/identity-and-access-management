@@ -302,6 +302,10 @@ Test the login flow again
 The 401 error should resolve once you can properly assign users to the application.
 Try disabling Federation Broker Mode first - this should fix the authentication issue!
 
+Now we have assigned ourself to the demo App:
+
+<img width="1358" height="989" alt="Image" src="https://github.com/user-attachments/assets/b3840067-e8f1-4ac5-aeda-f97b50e47d04" />
+
    === WE ARE HERE ===
 
 7. **Try Google Chrome Browser:**
