@@ -358,6 +358,49 @@ Now try again to login from the Demo App page at http://localhost:4200
 
    === MORE IMAGES HERE ===    
 
+8. **Add a Policy to default authorization server:**
+
+The error FAILURE: no_matching_policy means your Demo App doesn't have a proper authorization server policy configured. Here's how to fix it:
+Step 1: Configure Authorization Server Policy
+Go to: Security → API → Authorization Servers
+Click on "default" (the default authorization server)
+Go to the "Access Policies" tab
+Look for a policy that includes your Demo App or create one
+Step 2: Create or Modify Access Policy
+If there's no policy for your Demo App:
+Click "Add Policy"
+Name it: "Demo App Policy" or similar
+Description: "Policy for Demo App access"
+Assign to: Select your "Okta Demo App"
+Click "Create Policy"
+Step 3: Create Access Policy Rule
+After creating the policy:
+Click on the policy you just created
+Go to "Access Rules" tab
+Click "Add Rule"
+Configure the rule:
+Rule name: "Default Rule"
+Grant type: Check "Authorization Code" and "Refresh Token"
+User consent: "Skip consent"
+Assign to: "All users" or your specific user
+Click "Create Rule"
+Step 4: Alternative - Use Existing Policy
+If there's already a policy that should work:
+Go to: Security → API → Authorization Servers → default → Access Policies
+Find an existing policy (like "Default Policy")
+Click on it
+Go to "Assignments" tab
+Make sure your "Okta Demo App" is assigned to this policy
+Step 5: Verify the Fix
+After making these changes:
+Try logging in again from your Demo App
+Check the system logs - you should see SUCCESS instead of FAILURE
+The authentication should work without the "no_matching_policy" error
+The key issue is that OAuth2 apps need authorization server policies to define who can access them and under what conditions. Your Demo App was missing this configuration.
+Let me know what you find in the Authorization Servers section!
+
+   <img width="1171" height="976" alt="Image" src="https://github.com/user-attachments/assets/472b822f-c63b-41f4-99c4-70bf0ba91297" />
+
 ### Development Tips:
 
 - Use browser developer tools to inspect network requests
