@@ -65,8 +65,17 @@ This React application demonstrates integration with Okta for authentication and
 
 3. **Get Your Configuration Values:**
    - After creating the app, go to the "General" tab
-   - Copy the **Client ID**
-   - Your **Domain** is shown at the top of the Okta Developer Console
+
+   <img width="1666" height="989" alt="Image" src="https://github.com/user-attachments/assets/1309bbaf-737f-4f16-ad42-b17f0218fa79" />
+
+   <img width="1666" height="989" alt="Image" src="https://github.com/user-attachments/assets/18d66610-0ac7-4fb7-bb0a-0be1efaab021" />
+
+   <img width="1666" height="989" alt="Image" src="https://github.com/user-attachments/assets/3b53f8b0-5ed9-4811-a2ce-cd1421dd19d2" />
+
+   <img width="1666" height="592" alt="Image" src="https://github.com/user-attachments/assets/397a2b54-2d27-47ae-a01e-8ab8b0c6ca0e" />
+
+   - Copy the **Client ID** (here: 0oaveu18q5ebi43io697)
+   - Your **Domain** is shown at the top of the Okta Developer Console (here: )
 
 ## Environment Configuration
 
