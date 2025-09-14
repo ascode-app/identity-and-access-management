@@ -19,6 +19,10 @@ This React application demonstrates integration with Okta for authentication and
 
    <img width="936" height="740" alt="Image" src="https://github.com/user-attachments/assets/1d7d3762-c878-4e44-a3a7-4c1eb4851177" />
 
+   If you have the Okta Verify app installed on your (mobile) device, choose **Code**, otherwise choose **Password** (which you created when signing up with Okta).
+
+   <img width="936" height="740" alt="Image" src="https://github.com/user-attachments/assets/780ecf47-c283-4c98-abcd-61b65c26df6e" />
+
    - Navigate to Applications → Applications
    - Click "Create App Integration"
    - Choose "OIDC - OpenID Connect"
