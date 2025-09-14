@@ -412,9 +412,9 @@ CREATE hatch-project/src/hatch_project/apps/my_app/jest.config.ts
 use --skipInstall to skip installation.
 
 
- NX   👀 View Details of my_app
+ NX   👀 View Details of my-app
 
-Run "nx show project my_app" to view details about this project.
+Run "nx show project my-app" to view details about this project.
 ```
 
 This will:
@@ -433,6 +433,8 @@ After creation, you can run it with:
 ```
 $ npx nx serve my-app
 ```
+
+**NOTE**: If we run it from Ona (formerly known as GitPod), where its address is https://4200--019949ca-4f5c-7e6c-a3f0-2c843c088d1c.eu-central-1-01.gitpod.dev depending on which ONA workspace we are currently using.
 
 4. To serve the application in development mode:
 ```bash
