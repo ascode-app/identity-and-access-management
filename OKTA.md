@@ -321,7 +321,16 @@ When you try to save the policy change, Okta will require step-up authentication
 **To enable pop-ups:**
 - **Chrome/Edge:** Click the pop-up blocker icon in the address bar and allow pop-ups for `integrator-1150200.okta.com`
 - **Firefox:** Go to Settings → Privacy & Security → Permissions → Block pop-up windows → Add exception for `integrator-1150200.okta.com`
-- **Safari:** Go to Safari → Preferences → Websites → Pop-up Windows → Allow for `integrator-1150200.okta.com`
+- **Safari:** Go to Safari → Preferences → Websites → Pop-up Windows → Allow for `integrator-1150200.okta.com` and `integrator-1150200-admin.okta.com`
+
+<img width="829" height="585" alt="Image" src="https://github.com/user-attachments/assets/5a21a74d-72f0-41ce-ae03-4ad88214d61c" />
+
+- **Brave:** 
+  1. Click the Brave shield icon in the address bar
+  2. Turn off "Trackers & ads blocked" for the Okta domain
+  3. Go to Brave Settings → Privacy and security → Site and shield settings
+  4. Find `integrator-1150200.okta.com` in the list or add it manually
+  5. Set "Pop-ups and redirects" to "Allow"
 
 **Complete the step-up authentication:**
 1. Click "Continue" or "Verify" on the step-up authentication prompt

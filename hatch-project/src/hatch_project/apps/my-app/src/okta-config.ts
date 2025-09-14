@@ -1,16 +1,20 @@
 import { OktaAuth } from '@okta/okta-auth-js';
 
-// Debug environment variables
-console.log('Environment variables:', {
-  REACT_APP_OKTA_DOMAIN: process.env.REACT_APP_OKTA_DOMAIN,
-  REACT_APP_OKTA_CLIENT_ID: process.env.REACT_APP_OKTA_CLIENT_ID,
-  REACT_APP_OKTA_REDIRECT_URI: process.env.REACT_APP_OKTA_REDIRECT_URI
+// Okta Configuration - using hardcoded values for demo
+const OKTA_DOMAIN = 'integrator-1150200.okta.com';
+const CLIENT_ID = '0oaveu18q5ebi43io697';
+const REDIRECT_URI = 'http://localhost:4200/login/callback';
+
+console.log('Okta Configuration:', {
+  domain: OKTA_DOMAIN,
+  clientId: CLIENT_ID,
+  redirectUri: REDIRECT_URI
 });
 
 const oktaAuth = new OktaAuth({
-  issuer: `https://integrator-1150200.okta.com/oauth2/default`,
-  clientId: '0oaveu18q5ebi43io697',
-  redirectUri: 'http://localhost:4200/login/callback',
+  issuer: `https://${OKTA_DOMAIN}/oauth2/default`,
+  clientId: CLIENT_ID,
+  redirectUri: REDIRECT_URI,
   scopes: ['openid', 'profile', 'email'],
   pkce: true
 });
