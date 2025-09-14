@@ -250,6 +250,14 @@ src/
 
    <img width="1358" height="989" alt="Image" src="https://github.com/user-attachments/assets/87ec4762-59dc-4f14-a12c-b21b686ae175" />
 
+   As you can see below, Willem van Heemstra was not yet assigned to the Demo App:
+
+   <img width="1358" height="989" alt="Image" src="https://github.com/user-attachments/assets/40a5034f-5b93-447e-a123-8b2075937bbd" />
+
+   Assign to the Demo App.
+
+   - Click Done
+
    === WE ARE HERE ===
 
 7. **Try Google Chrome Browser:**
