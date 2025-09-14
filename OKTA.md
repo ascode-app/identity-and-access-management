@@ -266,6 +266,42 @@ src/
 
    You may get above error: *It is not possible to assign users to an AppInstance that has Federation Broker Mode enabled*
 
+🔍 What's Happening
+Federation Broker Mode is a special Okta configuration that:
+✅ Allows authentication through external identity providers
+❌ Prevents direct user assignments
+❌ Requires special configuration for local users
+This mode is typically used when you want to authenticate users through external systems (like Active Directory, LDAP, etc.) rather than managing users directly in Okta.
+🔧 Solutions
+Option 1: Disable Federation Broker Mode (Recommended)
+Go to: Applications → Applications → Okta Demo App
+Click "General" tab
+Scroll down to "Federation Broker Mode"
+Click "Edit"
+Uncheck "Enable Federation Broker Mode"
+Save the changes
+After disabling it:
+Go to "Assignments" tab
+Click "Assign" → "Assign to People"
+Assign your user account
+Option 2: Keep Federation Broker Mode (Advanced)
+If you need to keep Federation Broker Mode enabled, you'll need to:
+Set up a proper identity provider (like Active Directory)
+Configure user provisioning
+Set up proper federation rules
+�� For Your Demo App
+Since this is a demo application, I recommend Option 1 (disabling Federation Broker Mode) because:
+✅ Simpler setup
+✅ Direct user management
+✅ Easier testing
+✅ Standard Okta flow
+Next Steps
+Disable Federation Broker Mode in your Okta app
+Assign your user account to the app
+Test the login flow again
+The 401 error should resolve once you can properly assign users to the application.
+Try disabling Federation Broker Mode first - this should fix the authentication issue!
+
    === WE ARE HERE ===
 
 7. **Try Google Chrome Browser:**
