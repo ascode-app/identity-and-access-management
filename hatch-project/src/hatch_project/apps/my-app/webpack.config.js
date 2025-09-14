@@ -11,6 +11,8 @@ module.exports = {
   },
   devServer: {
     port: 4200,
+    host: '0.0.0.0',
+    allowedHosts: 'all',
     historyApiFallback: {
       index: '/index.html',
       disableDotRule: true,
