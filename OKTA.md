@@ -31,6 +31,10 @@ This React application demonstrates integration with Okta for authentication and
 
    <img width="938" height="822" alt="Image" src="https://github.com/user-attachments/assets/2db457f5-8b60-4629-865c-770ee9e32b62" />
 
+   Now you should be logged in successfully to the Dashboard:
+
+   <img width="1666" height="988" alt="Image" src="https://github.com/user-attachments/assets/1e42b4be-55c9-4c9c-a0f0-db94df5fbe96" />
+
    - Navigate to Applications → Applications
    - Click "Create App Integration"
    - Choose "OIDC - OpenID Connect"
