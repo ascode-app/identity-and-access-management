@@ -6,13 +6,12 @@ import HomePage from './home-page';
 import ProfilePage from './profile-page';
 import LoginPage from './login-page';
 
-const restoreOriginalUri = (_oktaAuth: any, originalUri: string) => {
-  window.location.replace(originalUri);
-};
-
 export function App() {
   return (
-    <Security oktaAuth={oktaAuth} restoreOriginalUri={restoreOriginalUri}>
+    <Security 
+      oktaAuth={oktaAuth}
+      restoreOriginalUri={async () => {}}
+    >
       <div className="min-h-screen bg-gray-50">
         {/* Navigation */}
         <nav className="bg-white shadow-sm border-b">
