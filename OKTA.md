@@ -341,6 +341,36 @@ When you try to save the policy change, Okta will require step-up authentication
 
 Now try again to login from the Demo App page at http://localhost:4200
 
+## **Authorization Server Policy Configuration**
+
+If you encounter a "You are not allowed to access this app" error with `FAILURE: no_matching_policy` in the system logs, you need to configure the authorization server policy:
+
+### **Step 1: Configure Authorization Server Policy**
+1. **Go to:** Security → API → Authorization Servers
+2. **Click on "default"** (the default authorization server)
+3. **Go to the "Access Policies" tab**
+4. **Look for a policy** that includes your Demo App or create one
+
+### **Step 2: Create Access Policy (if needed)**
+1. **Click "Add Policy"**
+2. **Name it:** "Demo App Policy"
+3. **Description:** "Policy for Demo App access"
+4. **Assign to:** Select your "Okta Demo App"
+5. **Click "Create Policy"**
+
+### **Step 3: Create Access Policy Rule**
+1. **Click on the policy you created**
+2. **Go to "Access Rules" tab**
+3. **Click "Add Rule"**
+4. **Configure the rule:**
+   - **Rule name:** "Default Rule"
+   - **Grant type:** Check "Authorization Code" and "Refresh Token"
+   - **User consent:** "Skip consent"
+   - **Assign to:** "All users" or your specific user
+5. **Click "Create Rule"**
+
+This resolves the `no_matching_policy` error that prevents OAuth2 authentication from working.
+
    === WE ARE HERE ===
 
 7. **Try Google Chrome Browser:**
