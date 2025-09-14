@@ -314,7 +314,21 @@ When warned about the less secure option, choose **Save anyway** as we use it fo
 
 After this it will alert you: **This is a protected action. Please perform step-up authentication.**
 
-... TO DO: Perform Step-Up Authentication. This requires that one allows the browser to open pop-up windows!
+**Step-Up Authentication Required - Browser Pop-ups Must Be Enabled:**
+
+When you try to save the policy change, Okta will require step-up authentication for security reasons. This process **requires pop-ups to be enabled** in your browser.
+
+**To enable pop-ups:**
+- **Chrome/Edge:** Click the pop-up blocker icon in the address bar and allow pop-ups for `integrator-1150200.okta.com`
+- **Firefox:** Go to Settings → Privacy & Security → Permissions → Block pop-up windows → Add exception for `integrator-1150200.okta.com`
+- **Safari:** Go to Safari → Preferences → Websites → Pop-up Windows → Allow for `integrator-1150200.okta.com`
+
+**Complete the step-up authentication:**
+1. Click "Continue" or "Verify" on the step-up authentication prompt
+2. Complete additional verification (Okta Verify app, SMS, Email, etc.)
+3. The policy change will be saved after successful authentication
+
+**Note:** If pop-ups are blocked, the step-up authentication window won't open and the policy change will fail.
 
 Now try again to login from the Demo App page at http://localhost:4200
 
