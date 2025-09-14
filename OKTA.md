@@ -11,7 +11,7 @@ This React application demonstrates integration with Okta for authentication and
 ## Okta Application Setup
 
 1. **Create an Okta Application:**
-   - Log in to your Okta Developer Console
+   - Log in to your Okta Developer Console (free at https://developer.okta.com/login)
    - Navigate to Applications → Applications
    - Click "Create App Integration"
    - Choose "OIDC - OpenID Connect"
