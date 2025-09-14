@@ -229,11 +229,49 @@ src/
    - Restart the development server after updating `.env.local`
    - Ensure the `.env.local` file is in the correct directory
 
+5. **Brave Browser too strict protection rules:**
+   - Click the Brave shield icon in the address bars
+   - Turn off "Trackers & ads blocked" for Okta
+
+   <img width="1366" height="990" alt="Image" src="https://github.com/user-attachments/assets/71e6047d-0169-488a-a0bc-f0dd109f7c2d" />
+
+   - Go to Brave Settings -> Privacy and security -> Cookies and other site data
+   - Allow cookies for ```integrator-1150200.okta.com```
+
+   <img width="1362" height="990" alt="Image" src="https://github.com/user-attachments/assets/f1eba4f9-f88a-4525-9013-c20c09f2371c" />
+
 ### Development Tips:
 
 - Use browser developer tools to inspect network requests
 - Check the Okta Developer Console logs for authentication flow debugging
 - The application includes detailed user claims display for debugging user information
+
+### Policy Configuration Issues:
+
+**"Policy evaluation failed for this request" error:**
+- This occurs when your Okta app sign-on policy requires additional authentication factors
+- Check your app sign-on policies in: Security → Authentication → App Sign-On Policy
+
+**Step-up Authentication Required:**
+When trying to modify security policies, Okta may require step-up authentication:
+
+1. **Complete Step-Up Authentication:**
+   - Click "Continue" or "Verify" on the step-up authentication prompt
+   - Complete additional verification (Okta Verify, SMS, Email, etc.)
+   - This is a security feature to prevent unauthorized policy changes
+
+2. **Alternative Approach - Modify Existing Rule:**
+   If you can't complete step-up authentication, modify the existing "Catch-all Rule":
+   - Go to: Security → Authentication → App Sign-On Policy
+   - Find your app's policy (e.g., "Okta Demo App")
+   - Click "Edit" on the "Catch-all Rule"
+   - Change "User must authenticate with" from "Any 2 factor types" to **"Password only"**
+   - Save the changes
+
+**For Demo Purposes - Simplify Authentication:**
+- Change policy to require only password authentication
+- This makes testing easier without requiring 2FA setup
+- Production applications should use appropriate security policies
 
 ## Next Steps
 
