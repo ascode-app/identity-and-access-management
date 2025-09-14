@@ -358,6 +358,8 @@ Now try again to login from the Demo App page at http://localhost:4200
 
    === MORE IMAGES HERE ===    
 
+   <img width="1171" height="976" alt="Image" src="https://github.com/user-attachments/assets/472b822f-c63b-41f4-99c4-70bf0ba91297" />
+
 8. **Add a Policy to default authorization server:**
 
 The error FAILURE: no_matching_policy means your Demo App doesn't have a proper authorization server policy configured. Here's how to fix it:
@@ -415,7 +417,10 @@ After making these changes:
 
 Let me know what you find in the Authorization Servers section!
 
-   <img width="1171" height="976" alt="Image" src="https://github.com/user-attachments/assets/472b822f-c63b-41f4-99c4-70bf0ba91297" />
+Hooray !!! A succesful login brings us to the landing page of our Demo App:
+
+<img width="1280" height="955" alt="Image" src="https://github.com/user-attachments/assets/dce13f8f-d1e6-4f9a-b82a-c480f6e06f21" />
+
 
 ### Development Tips:
 
