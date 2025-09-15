@@ -1,6 +1,6 @@
 # Documentation
 
-Read the Docs: [vanHeemstraSystems-REPOSITORY-NAME](https://vanHeemstraSystems-REPOSITORY-NAME.readthedocs.io/en/latest/)
+Read the Docs: [vanHeemstraSystems-identity-and-access-management](https://vanHeemstraSystems-identity-and-access-management.readthedocs.io/en/latest/)
 
 ## 100 - Install ReadTheDocs
 
@@ -61,7 +61,7 @@ ReadTheDocs should automatically set up webhooks, but if not:
 
 ## 700 - Trigger a build on ReadTheDocs
 
-On [ReadTheDocs](https://readthedocs.org/), after logging in navigate to your GitHub repository entry (e.g., ```https://app.readthedocs.org/projects/YOUR-GITHUB-REPOSITOY-NAME/```) and from the dotted menu (...) choose **Rebuild version**.
+On [ReadTheDocs](https://readthedocs.org/), after logging in navigate to your GitHub repository entry (e.g., ```https://app.readthedocs.org/projects/identity-and-access-management/```) and from the dotted menu (...) choose **Rebuild version**.
 
 ## 800 - Tips
 
@@ -79,4 +79,4 @@ On [ReadTheDocs](https://readthedocs.org/), after logging in navigate to your Gi
 
 ## 1000 - View the Documentation
 
-Visit https://vanHeemstraSystems-REPOSITORY-NAME.readthedocs.io/en/latest/
+Visit https://vanHeemstraSystems-identity-and-access-management.readthedocs.io/en/latest/
