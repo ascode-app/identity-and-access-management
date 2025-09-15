@@ -1,5 +1,5 @@
-Welcome to Your Project Documentation
-======================================
+Welcome to Identity and Access Management
+=========================================
 
 .. toctree::
    :maxdepth: 2
