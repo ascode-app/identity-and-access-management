@@ -20,3 +20,4 @@ export function SecureRoute({ children }: SecureRouteProps) {
 
   return <>{children}</>;
 }
+
